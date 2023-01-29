@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src="bootstrap.bundle.min.js" async></script>
+    <script src="function.js" async></script>
+    <script src="bootstrap.js" async></script> 
+</head>
+<body>
+    <div class="container-fluid p-3 bg-dark">
+        <div class="container bg-secondary w-50 h-25 p-5">
+            <p class="h1 text-center text-white mb-2">Student Grade Evaluation</p>
+            <form action="#"> 
+                <label for="inputName" class="mt-1 mb-0 text-white h5 form-label">Student Name</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Enter Name" required />
+                <p id="studentName" class="mt-2 text-light fs-4 fw-bolder"></p>
+                <hr> 
+                <label for="English" class="mt-1 mb-0 text-white h5 form-label">English</label>
+                <input type="number" id="English" name="English" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="Math" class="mt-1 mb-0 text-white h5 form-label">Math</label>
+                <input type="number" id="Math" name="Math" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="Science" class="mt-1 mb-0 text-white h5 form-label">Science</label>
+                <input type="number" id="Science" name="Science" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="Hekasi" class="mt-1 mb-0 text-white h5 form-label">Hekasi</label>
+                <input type="number" id="Hekasi" name="Hekasi" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="Filipino" class="mt-1 mb-0 text-white h5 form-label">Filipino</label>
+                <input type="number" id="Filipino" name="Filipino" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="Religion" class="mt-1 mb-0 text-white h4 form-label">Religion</label>
+                <input type="number" id="Religion" name="Religion" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="MAPEH" class="mt-1 mb-0 text-white h5 form-label">MAPEH</label>
+                <input type="number" id="MAPEH" name="MAPEH" placeholder="Enter Value" class="form-control" required />
+            
+                <label for="TLE" class="mt-1 mb-0 text-white h5 form-label">TLE</label>
+                <input type="number" id="TLE" name="TLE"placeholder="Enter Value"  class="form-control" required />
+                <button type="submit" class="btn btn-primary mt-4 w-100 fs-4" onclick="displayStudentName()">Compute Grade</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
